@@ -124,4 +124,51 @@ APPGS5MDM32A01.lod ساخته شده که با لود کردن آن در نرم�
 
  همچنین با استفاده از دستور ADD +98[Phone Number]0 می‌توان کاربر جدید به این مجموعه اضافه نمود.
 
- 
+### بخش ششم: تابع پارسر کامند‌ها و انجام دستورات
+
+ در اینجا تابعی برای پارس کردن تمامی دستورات و انجام‌ها طراحی شده است که دستورها شامل این بخش‌ها می‌شود:
+
+- ALL ON -> Turn all on
+- ALL OFF -> Turn all off
+- ON OUT [number] -> On out [number] 1 < [number] < 6
+- OFF OUT [number] -> OF out [number]
+- Manager -> Make that phone number manager
+- Get ALL Users -> All the users that have permission to command
+- Add [Phone number] -> Add +989138094457
+- Get Outputs -> Get the state of all outputs
+- Current time -> Get the time of M65
+- UNTIL [time] ON OUT [number] -> Until given time set output [number] state to on 
+- FOR [seconds] ON OUT [number] -> For amount of [seconds] keeps out [number] on
+
+ که ۶ خروجی درنظر گرفته شده که ۳ تای از آنها مربوط به چراغ‌های LED خود قطعه و سه‌تای دیگر مربوط به خروجی‌های IO بوده است.
+
+ در اینجا می‌توانید نحوه بررسی تمامی کامندها را مشاهده کنید:
+
+ <div align="center">
+  <img 
+    style="width: 1000px;"
+    src="https://github.com/Imanm02/SmartOutlet-IOT/blob/main/Pics/Picture9.png">
+</div>
+
+نکته حائز اهمیت در این قسمت این است که برای پابلیش کردن یک پیام در MQTT یا ارسال یک پیامک به همان شماره فرستنده از دو تابع زیر بهره می‌بریم:
+
+ <div align="center">
+  <img 
+    style="width: 1000px;"
+    src="https://github.com/Imanm02/SmartOutlet-IOT/blob/main/Pics/Picture10.png">
+</div>
+
+ <div align="center">
+  <img 
+    style="width: 1000px;"
+    src="https://github.com/Imanm02/SmartOutlet-IOT/blob/main/Pics/Picture11.png">
+</div>
+
+و تابع زیر را پس از بررسی تمامی دستورها صدا می‌زنیم که استیت تمامی خروجی‌های را آپدیت کند:
+
+ <div align="center">
+  <img 
+    style="width: 1000px;"
+    src="https://github.com/Imanm02/SmartOutlet-IOT/blob/main/Pics/Picture12.png">
+</div>
+
