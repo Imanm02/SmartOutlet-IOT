@@ -40,7 +40,7 @@ APPGS5MDM32A01.lod ساخته شده که با لود کردن آن در نرم�
 
 <div align="center">
   <img 
-    style="width: 700px;"
+    style="width: 1000px;"
     src="https://github.com/Imanm02/SmartOutlet-IOT/blob/main/Pics/Picture1.png">
 </div>
 
