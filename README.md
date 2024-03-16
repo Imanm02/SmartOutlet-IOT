@@ -144,7 +144,7 @@ APPGS5MDM32A01.lod ساخته شده که با لود کردن آن در نرم�
 
  در اینجا می‌توانید نحوه بررسی تمامی کامندها را مشاهده کنید:
 
- <div align="center">
+<div align="center">
   <img 
     style="width: 1000px;"
     src="https://github.com/Imanm02/SmartOutlet-IOT/blob/main/Pics/Picture9.png">
@@ -152,13 +152,13 @@ APPGS5MDM32A01.lod ساخته شده که با لود کردن آن در نرم�
 
 نکته حائز اهمیت در این قسمت این است که برای پابلیش کردن یک پیام در MQTT یا ارسال یک پیامک به همان شماره فرستنده از دو تابع زیر بهره می‌بریم:
 
- <div align="center">
+<div align="center">
   <img 
     style="width: 1000px;"
     src="https://github.com/Imanm02/SmartOutlet-IOT/blob/main/Pics/Picture10.png">
 </div>
 
- <div align="center">
+<div align="center">
   <img 
     style="width: 1000px;"
     src="https://github.com/Imanm02/SmartOutlet-IOT/blob/main/Pics/Picture11.png">
@@ -166,7 +166,7 @@ APPGS5MDM32A01.lod ساخته شده که با لود کردن آن در نرم�
 
 و تابع زیر را پس از بررسی تمامی دستورها صدا می‌زنیم که استیت تمامی خروجی‌های را آپدیت کند:
 
- <div align="center">
+<div align="center">
   <img 
     style="width: 1000px;"
     src="https://github.com/Imanm02/SmartOutlet-IOT/blob/main/Pics/Picture12.png">
@@ -178,7 +178,7 @@ APPGS5MDM32A01.lod ساخته شده که با لود کردن آن در نرم�
 UNTIL [HH:mm:ss] ON استفاده کرده‌ایم.
 بخش زیر برای دستور FOR طراحی شده است:
 
- <div align="center">
+<div align="center">
   <img 
     style="width: 1000px;"
     src="https://github.com/Imanm02/SmartOutlet-IOT/blob/main/Pics/Picture13.png">
@@ -187,7 +187,7 @@ UNTIL [HH:mm:ss] ON استفاده کرده‌ایم.
 که در آن زمان مدنظر (به صورت ۳ رقم) از کامند برداشته شده و یک تایمر بر اساس آن تنظیم می‌شود.
 همچنین برای بخش UNTIL به این صورت داریم:
 
- <div align="center">
+<div align="center">
   <img 
     style="width: 1000px;"
     src="https://github.com/Imanm02/SmartOutlet-IOT/blob/main/Pics/Picture14.png">
@@ -195,7 +195,7 @@ UNTIL [HH:mm:ss] ON استفاده کرده‌ایم.
 
 که در آن زمان داده شده در دستور براساس فرمت HH:mm:ss دریافت کرده و براساس تابعی که در ادامه می‌توان دید به فرمتی درمی‌آید که به ثانیه بوده و با کم کردن از زمان فعلی قطعه می‌توان تعیین کنیم که یک خروجی تا چه زمانی روشن بماند.
 
- <div align="center">
+<div align="center">
   <img 
     style="width: 1000px;"
     src="https://github.com/Imanm02/SmartOutlet-IOT/blob/main/Pics/Picture15.png">
@@ -203,7 +203,7 @@ UNTIL [HH:mm:ss] ON استفاده کرده‌ایم.
 
  همچنین تابع زیر زمانی صدا زده می‌شود که تایمر به انتها می‌رسد:
 
-  <div align="center">
+<div align="center">
   <img 
     style="width: 1000px;"
     src="https://github.com/Imanm02/SmartOutlet-IOT/blob/main/Pics/Picture16.png">
@@ -212,3 +212,37 @@ UNTIL [HH:mm:ss] ON استفاده کرده‌ایم.
 که به ازای هر خروجی یک تابع منحصر به فرد تعریف شده است و پس از بررسی شرط اصلی آن خروجی را دوباره به حالت خاموش می‌برد.
 
 این دو دستور به ما این امکان را می‌دهد که به صورت موازی و مستقل مدت زمان روشن شدن تمامی خروجی‌ها را کنترل کنیم.
+
+### بخش هشتم: نرم‌افزار‌های استفاده شده در طول انجام پروژه
+
+نرم‌افزار QNavigator:
+
+<div align="center">
+  <img 
+    style="width: 1000px;"
+    src="https://github.com/Imanm02/SmartOutlet-IOT/blob/main/Pics/Picture17.png">
+</div>
+
+نرم‌افزار QFlash:
+
+<div align="center">
+  <img 
+    style="width: 1000px;"
+    src="https://github.com/Imanm02/SmartOutlet-IOT/blob/main/Pics/Picture18.png">
+</div>
+
+نرم‌افزار QCOM:
+
+<div align="center">
+  <img 
+    style="width: 1000px;"
+    src="https://github.com/Imanm02/SmartOutlet-IOT/blob/main/Pics/Picture19.png">
+</div>
+
+تنظیمات سریال مربوط به قسمت UART:
+
+<div align="center">
+  <img 
+    style="width: 1000px;"
+    src="https://github.com/Imanm02/SmartOutlet-IOT/blob/main/Pics/Picture20.png">
+</div>
