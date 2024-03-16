@@ -1,0 +1,19 @@
+=========================
+=   M65_QuecOpen_GS5_SDK_V1.1
+=========================
+
+
+Usage:
+----------
+
+-----------------
+1. For User
+-----------------
+   make clean
+   make new
+-----------------
+Note:
+-------
+By default, the program in \SDK\custom\ is compiled. If you want to comiple other example, you need to change the right value of variable "C_PREDEF" in \SDK\make\gcc\gcc_makefile. This veriable defines the preprocessor definition that includes all codes to compile and link.
+
+For example, if you want to compile the example example_call.c, you first need to redefine the variable "C_PREDEF=-D  __EXAMPLE_CALL__". And then you may "make clean/new" to compile this example.

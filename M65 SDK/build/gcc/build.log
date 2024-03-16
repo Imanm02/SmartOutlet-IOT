@@ -1,0 +1,348 @@
+mkdir -p build/gcc/obj
+- Building build/gcc/obj/custom/config/custom_sys_cfg.o
+- Building build/gcc/obj/custom/config/sys_config.o
+- Building build/gcc/obj/ril/src/ril_audio.o
+ril/src/ril_audio.c: In function 'RIL_AUD_SetVolume':
+ril/src/ril_audio.c:105: warning: unused variable 'channel'
+ril/src/ril_audio.c: At top level:
+ril/src/ril_audio.c:70: warning: 's_channel_qmic' defined but not used
+ril/src/ril_audio.c:289: warning: 'parse_cmd_qmic' defined but not used
+- Building build/gcc/obj/ril/src/ril_custom.o
+- Building build/gcc/obj/ril/src/ril_http.o
+- Building build/gcc/obj/ril/src/ril_urc.o
+ril/src/ril_urc.c: In function 'OnURCHandler_MQTT_OPEN':
+ril/src/ril_urc.c:641: warning: passing argument 4 of 'Ql_OS_SendMessage' makes integer from pointer without a cast
+include/ql_system.h:244: note: expected 'u32' but argument is of type 'struct MQTT_Urc_Param_t *'
+ril/src/ril_urc.c: In function 'OnURCHandler_MQTT_CONN':
+ril/src/ril_urc.c:677: warning: passing argument 4 of 'Ql_OS_SendMessage' makes integer from pointer without a cast
+include/ql_system.h:244: note: expected 'u32' but argument is of type 'struct MQTT_Urc_Param_t *'
+ril/src/ril_urc.c: In function 'OnURCHandler_MQTT_SUB':
+ril/src/ril_urc.c:712: warning: array subscript has type 'char'
+ril/src/ril_urc.c:716: warning: array subscript has type 'char'
+ril/src/ril_urc.c:721: warning: passing argument 4 of 'Ql_OS_SendMessage' makes integer from pointer without a cast
+include/ql_system.h:244: note: expected 'u32' but argument is of type 'struct MQTT_Urc_Param_t *'
+ril/src/ril_urc.c: In function 'OnURCHandler_MQTT_PUB':
+ril/src/ril_urc.c:762: warning: passing argument 4 of 'Ql_OS_SendMessage' makes integer from pointer without a cast
+include/ql_system.h:244: note: expected 'u32' but argument is of type 'struct MQTT_Urc_Param_t *'
+ril/src/ril_urc.c: In function 'OnURCHandler_MQTT_TUNS':
+ril/src/ril_urc.c:791: warning: passing argument 4 of 'Ql_OS_SendMessage' makes integer from pointer without a cast
+include/ql_system.h:244: note: expected 'u32' but argument is of type 'struct MQTT_Urc_Param_t *'
+ril/src/ril_urc.c: In function 'OnURCHandler_MQTT_STATE':
+ril/src/ril_urc.c:817: warning: passing argument 4 of 'Ql_OS_SendMessage' makes integer from pointer without a cast
+include/ql_system.h:244: note: expected 'u32' but argument is of type 'struct MQTT_Urc_Param_t *'
+ril/src/ril_urc.c: In function 'OnURCHandler_MQTT_CLOSE':
+ril/src/ril_urc.c:845: warning: passing argument 4 of 'Ql_OS_SendMessage' makes integer from pointer without a cast
+include/ql_system.h:244: note: expected 'u32' but argument is of type 'struct MQTT_Urc_Param_t *'
+ril/src/ril_urc.c: In function 'OnURCHandler_MQTT_DISC':
+ril/src/ril_urc.c:875: warning: passing argument 4 of 'Ql_OS_SendMessage' makes integer from pointer without a cast
+include/ql_system.h:244: note: expected 'u32' but argument is of type 'struct MQTT_Urc_Param_t *'
+- Building build/gcc/obj/ril/src/ril_atResponse.o
+ril/src/ril_atResponse.c: In function 'Ql_RIL_AT_SetErrCode':
+ril/src/ril_atResponse.c:50: warning: control reaches end of non-void function
+- Building build/gcc/obj/ril/src/ril_network.o
+ril/src/ril_network.c: In function 'ATResponse_CREG_Handler':
+ril/src/ril_network.c:77: warning: pointer targets in passing argument 1 of 'RIL_Parse_value' differ in signedness
+ril/inc/ril_network.h:270: note: expected 's8 *' but argument is of type 'char *'
+ril/src/ril_network.c: In function 'ATResponse_CGREG_Handler':
+ril/src/ril_network.c:169: warning: pointer targets in passing argument 1 of 'RIL_Parse_value' differ in signedness
+ril/inc/ril_network.h:270: note: expected 's8 *' but argument is of type 'char *'
+ril/src/ril_network.c: In function 'ATResponse_CSQ_Handler':
+ril/src/ril_network.c:261: warning: pointer targets in passing argument 1 of 'RIL_Parse_value' differ in signedness
+ril/inc/ril_network.h:270: note: expected 's8 *' but argument is of type 'char *'
+ril/src/ril_network.c: In function 'ATRsp_COPS_Handler':
+ril/src/ril_network.c:512: warning: unused variable 'str'
+- Building build/gcc/obj/ril/src/ril_location.o
+ril/src/ril_location.c: In function 'ATResponse_GetLocation_Ex_Handler':
+ril/src/ril_location.c:78: warning: unused variable 'p2'
+ril/src/ril_location.c:77: warning: unused variable 'p1'
+ril/src/ril_location.c: In function 'OnURCHandler_QCELLLocation':
+ril/src/ril_location.c:176: warning: assignment discards qualifiers from pointer target type
+ril/src/ril_location.c:177: warning: pointer targets in passing argument 1 of 'Ql_strstr' differ in signedness
+include/ql_stdlib.h:55: note: expected 'const char *' but argument is of type 'u8 *'
+- Building build/gcc/obj/ril/src/ril_ntp.o
+ril/src/ril_ntp.c: In function 'OnURCHandler_NTPCMD':
+ril/src/ril_ntp.c:50: warning: passing argument 1 of 'callback_NTPCMD' discards qualifiers from pointer target type
+ril/src/ril_ntp.c:50: note: expected 'char *' but argument is of type 'const char *'
+- Building build/gcc/obj/ril/src/ril_telephony.o
+- Building build/gcc/obj/ril/src/ril_sms.o
+- Building build/gcc/obj/ril/src/ril_system.o
+- Building build/gcc/obj/ril/src/Ril_dtmf.o
+- Building build/gcc/obj/ril/src/ril_sim.o
+ril/src/ril_sim.c: In function 'ATRsp_CCID_Handler':
+ril/src/ril_sim.c:266: warning: unused variable 'str'
+- Building build/gcc/obj/ril/src/ril_location2.o
+ril/src/ril_location2.c: In function 'OnURCHandler_QLBS':
+ril/src/ril_location2.c:117: warning: pointer targets in passing argument 1 of 'Ql_strcpy' differ in signedness
+include/ql_stdlib.h:47: note: expected 'char *' but argument is of type 'u8 *'
+ril/src/ril_location2.c:118: warning: pointer targets in passing argument 2 of 'Ql_StrPrefixMatch' differ in signedness
+ril/inc/ril_util.h:47: note: expected 'const char *' but argument is of type 'u8 *'
+ril/src/ril_location2.c:126: warning: pointer targets in passing argument 1 of 'Ql_atoi' differ in signedness
+include/ql_stdlib.h:41: note: expected 'const char *' but argument is of type 'u8 *'
+ril/src/ril_location2.c:131: warning: pointer targets in passing argument 1 of 'Ql_atoi' differ in signedness
+include/ql_stdlib.h:41: note: expected 'const char *' but argument is of type 'u8 *'
+ril/src/ril_location2.c:140: warning: pointer targets in passing argument 1 of 'Ql_atof' differ in signedness
+include/ql_stdlib.h:42: note: expected 'const char *' but argument is of type 'u8 *'
+ril/src/ril_location2.c:146: warning: pointer targets in passing argument 1 of 'Ql_atof' differ in signedness
+include/ql_stdlib.h:42: note: expected 'const char *' but argument is of type 'u8 *'
+ril/src/ril_location2.c: In function 'ATResponse_Qlbs_Ex_Handler':
+ril/src/ril_location2.c:178: warning: declaration of 'loclnfo' shadows a global declaration
+ril/src/ril_location2.c:104: warning: shadowed declaration is here
+ril/src/ril_location2.c: In function 'RIL_QLBS_Loc_Ex':
+ril/src/ril_location2.c:246: warning: pointer targets in passing argument 1 of 'Ql_strcpy' differ in signedness
+include/ql_stdlib.h:47: note: expected 'char *' but argument is of type 'u8 *'
+ril/src/ril_location2.c:246: warning: pointer targets in passing argument 2 of 'Ql_strcpy' differ in signedness
+include/ql_stdlib.h:47: note: expected 'const char *' but argument is of type 'u8 *'
+ril/src/ril_location2.c: In function 'ATResponse_Qlbs_Ex_Handler':
+ril/src/ril_location2.c:204: warning: array subscript is above array bounds
+ril/src/ril_location2.c: In function 'OnURCHandler_QLBS':
+ril/src/ril_location2.c:153: warning: array subscript is above array bounds
+- Building build/gcc/obj/ril/src/ril_init.o
+- Building build/gcc/obj/ril/src/ril_ftp.o
+- Building build/gcc/obj/ril/src/ril_alarm.o
+- Building build/gcc/obj/ril/src/ril_util.o
+- Building build/gcc/obj/ril/src/ril_mqtt.o
+ril/src/ril_mqtt.c: In function 'RIL_MQTT_QMTSUB':
+ril/src/ril_mqtt.c:179: warning: pointer targets in passing argument 1 of 'Ql_sprintf' differ in signedness
+ril/src/ril_mqtt.c:179: note: expected 'char *' but argument is of type 'u8 *'
+ril/src/ril_mqtt.c:183: warning: pointer targets in passing argument 1 of 'Ql_sprintf' differ in signedness
+ril/src/ril_mqtt.c:183: note: expected 'char *' but argument is of type 'u8 *'
+ril/src/ril_mqtt.c:185: warning: pointer targets in passing argument 1 of 'Ql_strlen' differ in signedness
+include/ql_stdlib.h:54: note: expected 'const char *' but argument is of type 'u8 *'
+ril/src/ril_mqtt.c:185: warning: pointer targets in passing argument 1 of 'Ql_strncat' differ in signedness
+include/ql_stdlib.h:50: note: expected 'char *' but argument is of type 'u8 *'
+ril/src/ril_mqtt.c:185: warning: pointer targets in passing argument 2 of 'Ql_strncat' differ in signedness
+include/ql_stdlib.h:50: note: expected 'const char *' but argument is of type 'u8 *'
+ril/src/ril_mqtt.c:189: warning: pointer targets in passing argument 1 of 'Ql_sprintf' differ in signedness
+ril/src/ril_mqtt.c:189: note: expected 'char *' but argument is of type 'u8 *'
+ril/src/ril_mqtt.c:190: warning: pointer targets in passing argument 1 of 'Ql_strlen' differ in signedness
+include/ql_stdlib.h:54: note: expected 'const char *' but argument is of type 'u8 *'
+ril/src/ril_mqtt.c:190: warning: pointer targets in passing argument 1 of 'Ql_RIL_SendATCmd' differ in signedness
+ril/inc/ril.h:187: note: expected 'char *' but argument is of type 'u8 *'
+ril/src/ril_mqtt.c: In function 'RIL_MQTT_QMTUNS':
+ril/src/ril_mqtt.c:239: warning: pointer targets in passing argument 1 of 'Ql_sprintf' differ in signedness
+ril/src/ril_mqtt.c:239: note: expected 'char *' but argument is of type 'u8 *'
+ril/src/ril_mqtt.c:243: warning: pointer targets in passing argument 1 of 'Ql_sprintf' differ in signedness
+ril/src/ril_mqtt.c:243: note: expected 'char *' but argument is of type 'u8 *'
+ril/src/ril_mqtt.c:245: warning: pointer targets in passing argument 1 of 'Ql_strlen' differ in signedness
+include/ql_stdlib.h:54: note: expected 'const char *' but argument is of type 'u8 *'
+ril/src/ril_mqtt.c:245: warning: pointer targets in passing argument 1 of 'Ql_strncat' differ in signedness
+include/ql_stdlib.h:50: note: expected 'char *' but argument is of type 'u8 *'
+ril/src/ril_mqtt.c:245: warning: pointer targets in passing argument 2 of 'Ql_strncat' differ in signedness
+include/ql_stdlib.h:50: note: expected 'const char *' but argument is of type 'u8 *'
+ril/src/ril_mqtt.c:249: warning: pointer targets in passing argument 1 of 'Ql_sprintf' differ in signedness
+ril/src/ril_mqtt.c:249: note: expected 'char *' but argument is of type 'u8 *'
+ril/src/ril_mqtt.c:251: warning: pointer targets in passing argument 1 of 'Ql_strlen' differ in signedness
+include/ql_stdlib.h:54: note: expected 'const char *' but argument is of type 'u8 *'
+ril/src/ril_mqtt.c:251: warning: pointer targets in passing argument 1 of 'Ql_RIL_SendATCmd' differ in signedness
+ril/inc/ril.h:187: note: expected 'char *' but argument is of type 'u8 *'
+ril/src/ril_mqtt.c: In function 'ATResponse_QMTPUB_handler':
+ril/src/ril_mqtt.c:302: warning: pointer targets in assignment differ in signedness
+ril/src/ril_mqtt.c:309: warning: pointer targets in assignment differ in signedness
+ril/src/ril_mqtt.c:314: warning: pointer targets in assignment differ in signedness
+ril/src/ril_mqtt.c:319: warning: pointer targets in assignment differ in signedness
+ril/src/ril_mqtt.c:299: warning: unused variable 'i'
+- Building build/gcc/obj/example/example_file.o
+- Building build/gcc/obj/example/example_dfota_ftp.o
+- Building build/gcc/obj/example/example_multitask.o
+- Building build/gcc/obj/example/example_tcp_demo.o
+- Building build/gcc/obj/example/example_gpio.o
+- Building build/gcc/obj/example/example_spi.o
+- Building build/gcc/obj/example/example_udpserver.o
+- Building build/gcc/obj/example/example_adc.o
+- Building build/gcc/obj/example/example_system.o
+- Building build/gcc/obj/example/example_tcpclient.o
+- Building build/gcc/obj/example/debug.o
+example/debug.c: In function 'Check_Separator':
+example/debug.c:91: warning: suggest parentheses around assignment used as truth value
+example/debug.c:98: warning: suggest parentheses around assignment used as truth value
+example/debug.c:105: warning: suggest parentheses around assignment used as truth value
+example/debug.c:88: warning: unused variable 'pChar2'
+example/debug.c: In function 'Analyse_Command':
+example/debug.c:149: warning: suggest parentheses around assignment used as truth value
+example/debug.c:166: warning: suggest parentheses around assignment used as truth value
+- Building build/gcc/obj/example/example_clk.o
+- Building build/gcc/obj/example/example_dfota_http.o
+- Building build/gcc/obj/example/example_location2.o
+- Building build/gcc/obj/example/example_transpass.o
+- Building build/gcc/obj/example/example_time.o
+- Building build/gcc/obj/example/example_memory.o
+- Building build/gcc/obj/example/example_ftp.o
+- Building build/gcc/obj/example/example_sms.o
+- Building build/gcc/obj/example/example_float_math.o
+- Building build/gcc/obj/example/example_alarm.o
+- Building build/gcc/obj/example/example_multitask_port.o
+- Building build/gcc/obj/example/example_watchdog.o
+- Building build/gcc/obj/example/example_timer.o
+- Building build/gcc/obj/example/example_udpclient.o
+- Building build/gcc/obj/example/example_mqtt.o
+- Building build/gcc/obj/example/example_audio.o
+- Building build/gcc/obj/example/example_http.o
+- Building build/gcc/obj/example/example_tcpserver.o
+- Building build/gcc/obj/example/example_call.o
+- Building build/gcc/obj/example/example_eint.o
+- Building build/gcc/obj/example/example_iic.o
+- Building build/gcc/obj/example/example_location.o
+- Building build/gcc/obj/custom/PCF8574.o
+- Building build/gcc/obj/custom/main.o
+custom/main.c: In function 'SMS_Initialize':
+custom/main.c:185: warning: unused variable 'nTotal'
+custom/main.c:184: warning: unused variable 'nUsed'
+custom/main.c:183: warning: unused variable 'nCurrStorage'
+custom/main.c: In function 'SMS_TextMode_Send':
+custom/main.c:210: warning: pointer targets in passing argument 4 of 'RIL_SMS_SendSMS_Text' differ in signedness
+ril/inc/ril_sms.h:316: note: expected 'u8 *' but argument is of type 'char *'
+custom/main.c: In function 'TimerCallback1':
+custom/main.c:221: warning: implicit declaration of function 'update_IO'
+custom/main.c: In function 'Hdlr_RecvNewSMS':
+custom/main.c:320: warning: pointer targets in passing argument 1 of 'Ql_strcmp' differ in signedness
+include/ql_stdlib.h:51: note: expected 'const char *' but argument is of type 'u8 *'
+custom/main.c:330: warning: pointer targets in passing argument 2 of 'Ql_FS_Write' differ in signedness
+include/ql_fs.h:214: note: expected 'u8 *' but argument is of type 'char *'
+custom/main.c:330: warning: pointer targets in passing argument 4 of 'Ql_FS_Write' differ in signedness
+include/ql_fs.h:214: note: expected 'u32 *' but argument is of type 's32 *'
+custom/main.c:344: warning: pointer targets in passing argument 1 of 'Ql_strncmp' differ in signedness
+include/ql_stdlib.h:52: note: expected 'const char *' but argument is of type 'u8 *'
+custom/main.c:346: warning: pointer targets in passing argument 1 of 'Ql_strlen' differ in signedness
+include/ql_stdlib.h:54: note: expected 'const char *' but argument is of type 'u8 *'
+custom/main.c:350: warning: pointer targets in passing argument 4 of 'Ql_FS_Read' differ in signedness
+include/ql_fs.h:182: note: expected 'u32 *' but argument is of type 's32 *'
+custom/main.c:354: warning: pointer targets in passing argument 2 of 'Ql_strcpy' differ in signedness
+include/ql_stdlib.h:47: note: expected 'const char *' but argument is of type 'u8 *'
+custom/main.c:356: warning: pointer targets in passing argument 1 of 'Ql_strlen' differ in signedness
+include/ql_stdlib.h:54: note: expected 'const char *' but argument is of type 'u8 *'
+custom/main.c:356: warning: pointer targets in passing argument 4 of 'Ql_FS_Write' differ in signedness
+include/ql_fs.h:214: note: expected 'u32 *' but argument is of type 's32 *'
+custom/main.c:375: warning: pointer targets in passing argument 1 of 'Ql_strcmp' differ in signedness
+include/ql_stdlib.h:51: note: expected 'const char *' but argument is of type 'u8 *'
+custom/main.c:383: warning: pointer targets in passing argument 1 of 'Ql_strcmp' differ in signedness
+include/ql_stdlib.h:51: note: expected 'const char *' but argument is of type 'u8 *'
+custom/main.c:391: warning: pointer targets in passing argument 1 of 'Ql_strcmp' differ in signedness
+include/ql_stdlib.h:51: note: expected 'const char *' but argument is of type 'u8 *'
+custom/main.c:408: warning: pointer targets in passing argument 1 of 'Ql_strcmp' differ in signedness
+include/ql_stdlib.h:51: note: expected 'const char *' but argument is of type 'u8 *'
+custom/main.c:425: warning: pointer targets in passing argument 1 of 'Ql_strcmp' differ in signedness
+include/ql_stdlib.h:51: note: expected 'const char *' but argument is of type 'u8 *'
+custom/main.c:437: warning: pointer targets in passing argument 1 of 'Ql_strncmp' differ in signedness
+include/ql_stdlib.h:52: note: expected 'const char *' but argument is of type 'u8 *'
+custom/main.c:473: warning: pointer targets in passing argument 1 of 'Ql_strncmp' differ in signedness
+include/ql_stdlib.h:52: note: expected 'const char *' but argument is of type 'u8 *'
+custom/main.c:475: warning: pointer targets in passing argument 2 of 'Ql_strncpy' differ in signedness
+include/ql_stdlib.h:48: note: expected 'const char *' but argument is of type 'u8 *'
+custom/main.c:537: warning: pointer targets in passing argument 1 of 'Ql_strncmp' differ in signedness
+include/ql_stdlib.h:52: note: expected 'const char *' but argument is of type 'u8 *'
+custom/main.c:539: warning: pointer targets in passing argument 2 of 'Ql_strncpy' differ in signedness
+include/ql_stdlib.h:48: note: expected 'const char *' but argument is of type 'u8 *'
+custom/main.c:596: warning: pointer targets in passing argument 1 of 'Ql_strncmp' differ in signedness
+include/ql_stdlib.h:52: note: expected 'const char *' but argument is of type 'u8 *'
+custom/main.c:285: warning: unused variable 'bResult'
+custom/main.c:284: warning: unused variable 'aReplyCon'
+custom/main.c:278: warning: unused variable 'uMsgRef'
+custom/main.c: In function 'proc_subtask1':
+custom/main.c:641: warning: unused variable 'status'
+custom/main.c: In function 'CallBack_UART_Hdlr':
+custom/main.c:682: warning: unused variable 'p'
+custom/main.c:680: warning: enumeration value 'EVENT_UART_READY_TO_WRITE' not handled in switch
+custom/main.c:680: warning: enumeration value 'EVENT_UART_FE_IND' not handled in switch
+custom/main.c:680: warning: enumeration value 'EVENT_UART_RI_IND' not handled in switch
+custom/main.c:680: warning: enumeration value 'EVENT_UART_DCD_IND' not handled in switch
+custom/main.c:680: warning: enumeration value 'EVENT_UART_DTR_IND' not handled in switch
+custom/main.c: In function 'check_file':
+custom/main.c:739: warning: pointer targets in passing argument 4 of 'Ql_FS_Read' differ in signedness
+include/ql_fs.h:182: note: expected 'u32 *' but argument is of type 's32 *'
+custom/main.c:741: warning: pointer targets in passing argument 2 of 'Ql_strncpy' differ in signedness
+include/ql_stdlib.h:48: note: expected 'const char *' but argument is of type 'u8 *'
+custom/main.c:742: warning: pointer targets in passing argument 2 of 'Ql_strncpy' differ in signedness
+include/ql_stdlib.h:48: note: expected 'const char *' but argument is of type 'u8 *'
+custom/main.c:743: warning: pointer targets in passing argument 2 of 'Ql_strncpy' differ in signedness
+include/ql_stdlib.h:48: note: expected 'const char *' but argument is of type 'u8 *'
+custom/main.c:744: warning: pointer targets in passing argument 2 of 'Ql_strncpy' differ in signedness
+include/ql_stdlib.h:48: note: expected 'const char *' but argument is of type 'u8 *'
+custom/main.c: In function 'proc_main_task':
+custom/main.c:761: warning: implicit declaration of function 'Ql_IIC_Init'
+custom/main.c:764: warning: implicit declaration of function 'Ql_IIC_Config'
+custom/main.c: At top level:
+custom/main.c:886: warning: conflicting types for 'update_IO'
+custom/main.c:221: note: previous implicit declaration of 'update_IO' was here
+custom/main.c: In function 'update_IO':
+custom/main.c:887: warning: implicit declaration of function 'pcf8574_setoutput'
+custom/main.c: At top level:
+custom/main.c:43: warning: 'm_myUartPort' defined but not used
+custom/main.c:67: warning: 'targetTimeForOutput' defined but not used
+custom/main.c:125: warning: 'ConSMSBuf_IsIntact' declared 'static' but never defined
+custom/main.c:126: warning: 'ConSMSBuf_AddSeg' declared 'static' but never defined
+custom/main.c:127: warning: 'ConSMSBuf_GetIndex' declared 'static' but never defined
+- Building build/gcc/obj/custom/dfota/src/dfota_main.o
+custom/dfota/src/dfota_main.c: In function 'Ql_DFOTA_StartUpgrade':
+custom/dfota/src/dfota_main.c:71: warning: implicit declaration of function 'FTP_DfotaMain'
+- Building build/gcc/obj/custom/dfota/src/dfota_ftp.o
+custom/dfota/src/dfota_ftp.c: In function 'DoUpgrade':
+custom/dfota/src/dfota_ftp.c:222: warning: 'return' with no value, in function returning non-void
+custom/dfota/src/dfota_ftp.c:239: warning: 'return' with no value, in function returning non-void
+custom/dfota/src/dfota_ftp.c:247: warning: 'return' with no value, in function returning non-void
+custom/dfota/src/dfota_ftp.c:266: warning: 'return' with no value, in function returning non-void
+custom/dfota/src/dfota_ftp.c:275: warning: 'return' with no value, in function returning non-void
+custom/dfota/src/dfota_ftp.c:297: warning: 'return' with no value, in function returning non-void
+custom/dfota/src/dfota_ftp.c:306: warning: 'return' with no value, in function returning non-void
+- Building build/gcc/obj/custom/dfota/src/dfota_http_code.o
+custom/dfota/src/dfota_http_code.c: In function 'DecodeHttpResult':
+custom/dfota/src/dfota_http_code.c:75: warning: pointer targets in passing argument 1 of 'Ql_atoi' differ in signedness
+include/ql_stdlib.h:41: note: expected 'const char *' but argument is of type 'u8 *'
+custom/dfota/src/dfota_http_code.c: In function 'http_DecodeURL':
+custom/dfota/src/dfota_http_code.c:147: warning: pointer targets in passing argument 1 of 'Ql_strlen' differ in signedness
+include/ql_stdlib.h:54: note: expected 'const char *' but argument is of type 'u8 *'
+custom/dfota/src/dfota_http_code.c:147: warning: pointer targets in passing argument 1 of 'http_ip_check' differ in signedness
+custom/dfota/src/dfota_http_code.c:52: note: expected 'char *' but argument is of type 'u8 *'
+custom/dfota/src/dfota_http_code.c:192: warning: pointer targets in passing argument 1 of 'Ql_atoi' differ in signedness
+include/ql_stdlib.h:41: note: expected 'const char *' but argument is of type 'u8 *'
+custom/dfota/src/dfota_http_code.c:103: warning: unused variable 'ip_validity'
+custom/dfota/src/dfota_http_code.c:101: warning: unused variable 'ipadd'
+custom/dfota/src/dfota_http_code.c: In function 'DecodeHttpLine':
+custom/dfota/src/dfota_http_code.c:318: warning: pointer targets in passing argument 1 of 'Ql_atoi' differ in signedness
+include/ql_stdlib.h:41: note: expected 'const char *' but argument is of type 'u8 *'
+custom/dfota/src/dfota_http_code.c: In function 'http_DecodeHeader':
+custom/dfota/src/dfota_http_code.c:374: warning: unused variable 'httpContext_p'
+custom/dfota/src/dfota_http_code.c:371: warning: unused variable 'startpos'
+- Building build/gcc/obj/custom/dfota/src/dfota_http.o
+custom/dfota/src/dfota_http.c: In function 'HTTP_IsHttpServer':
+custom/dfota/src/dfota_http.c:64: warning: implicit declaration of function 'Ql_StrToUpper'
+custom/dfota/src/dfota_http.c: In function 'HTTP_DfotaMain':
+custom/dfota/src/dfota_http.c:94: warning: pointer targets in passing argument 1 of 'Ql_strcpy' differ in signedness
+include/ql_stdlib.h:47: note: expected 'char *' but argument is of type 'u8 *'
+custom/dfota/src/dfota_http.c:94: warning: pointer targets in passing argument 2 of 'Ql_strcpy' differ in signedness
+include/ql_stdlib.h:47: note: expected 'const char *' but argument is of type 'u8 *'
+custom/dfota/src/dfota_http.c:95: warning: pointer targets in passing argument 1 of 'Ql_strcpy' differ in signedness
+include/ql_stdlib.h:47: note: expected 'char *' but argument is of type 'u8 *'
+custom/dfota/src/dfota_http.c:95: warning: pointer targets in passing argument 2 of 'Ql_strcpy' differ in signedness
+include/ql_stdlib.h:47: note: expected 'const char *' but argument is of type 'u8 *'
+custom/dfota/src/dfota_http.c:96: warning: pointer targets in passing argument 1 of 'Ql_strcpy' differ in signedness
+include/ql_stdlib.h:47: note: expected 'char *' but argument is of type 'u8 *'
+custom/dfota/src/dfota_http.c:96: warning: pointer targets in passing argument 2 of 'Ql_strcpy' differ in signedness
+include/ql_stdlib.h:47: note: expected 'const char *' but argument is of type 'u8 *'
+custom/dfota/src/dfota_http.c:124: warning: pointer targets in passing argument 1 of 'Ql_strstr' differ in signedness
+include/ql_stdlib.h:55: note: expected 'const char *' but argument is of type 'u8 *'
+custom/dfota/src/dfota_http.c:124: warning: pointer targets in assignment differ in signedness
+custom/dfota/src/dfota_http.c:128: warning: pointer targets in passing argument 1 of 'Ql_strlen' differ in signedness
+include/ql_stdlib.h:54: note: expected 'const char *' but argument is of type 'u8 *'
+custom/dfota/src/dfota_http.c: In function 'http_SendHttpGetHead':
+custom/dfota/src/dfota_http.c:273: warning: pointer targets in passing argument 2 of 'Ql_strncpy' differ in signedness
+include/ql_stdlib.h:48: note: expected 'const char *' but argument is of type 'u8 *'
+custom/dfota/src/dfota_http.c:275: warning: pointer targets in passing argument 2 of 'Ql_SOC_Send' differ in signedness
+include/ql_socket.h:265: note: expected 'u8 *' but argument is of type 'char *'
+custom/dfota/src/dfota_http.c:295: warning: pointer targets in passing argument 2 of 'Ql_SOC_Send' differ in signedness
+include/ql_socket.h:265: note: expected 'u8 *' but argument is of type 'char *'
+custom/dfota/src/dfota_http.c:305: warning: pointer targets in passing argument 2 of 'Ql_SOC_Send' differ in signedness
+include/ql_socket.h:265: note: expected 'u8 *' but argument is of type 'char *'
+custom/dfota/src/dfota_http.c:315: warning: pointer targets in passing argument 2 of 'Ql_SOC_Send' differ in signedness
+include/ql_socket.h:265: note: expected 'u8 *' but argument is of type 'char *'
+custom/dfota/src/dfota_http.c:325: warning: pointer targets in passing argument 2 of 'Ql_SOC_Send' differ in signedness
+include/ql_socket.h:265: note: expected 'u8 *' but argument is of type 'char *'
+custom/dfota/src/dfota_http.c:335: warning: pointer targets in passing argument 2 of 'Ql_SOC_Send' differ in signedness
+include/ql_socket.h:265: note: expected 'u8 *' but argument is of type 'char *'
+----------------------------------------------------
+- GCC Compiling Finished Sucessfully.
+- The target image is in the build/gcc directory.
+----------------------------------------------------
+BIN: build/gcc/APPGS5MDM32A01.bin
+LOD: build/gcc/APPGS5MDM32A01.lod
+Start address: 137428992
+Sector size: 4096
