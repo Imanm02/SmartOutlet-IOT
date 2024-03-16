@@ -223,7 +223,9 @@ UNTIL [HH:mm:ss] ON استفاده کرده‌ایم.
     src="https://github.com/Imanm02/SmartOutlet-IOT/blob/main/Pics/Picture17.png">
 </div>
 
-نرم‌افزار QFlash:
+<div align="center">
+    نرم‌افزار QFlash:
+</div>
 
 <div align="center">
   <img 
